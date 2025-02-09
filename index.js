@@ -5,6 +5,7 @@ let cors = require("cors");
 let app = express();
 
 dotenv.config();
+app.use(cors());
 app.use(express.static("public"));
 console.log(path.join(__dirname,"views","index.html"))
 
